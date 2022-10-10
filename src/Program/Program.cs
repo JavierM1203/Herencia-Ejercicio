@@ -7,6 +7,8 @@ namespace PII_Herencia
     {
         static void Main(string[] args)
         {
+           
+            
             /*
             En éste método deberas mostrar un ejemplo de funcionamiento de tu programa an pseudocódigo. A continuación te 
             planteamos un ejemplo de como hacerlo. Esto no significa que te limites a hacer solamente esto, debes pensar 

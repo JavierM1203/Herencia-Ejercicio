@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 namespace PII_Herencia;
 
-class PoolDriver : Driver
+public class PoolDriver : Driver
 {
-    int capacity;
+    public int capacity {get; private set;}
     List<Passenger> passengers = new List<Passenger>();
 
     public PoolDriver(string name, string lastName, string ID, int rating, string vehicle, int capacity)

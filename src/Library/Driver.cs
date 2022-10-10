@@ -1,8 +1,8 @@
 namespace PII_Herencia;
 
-class Driver : User
+public class Driver : User
 {
-    string vehicle;
+    public string vehicle {get; private set;}
 
     public Driver(string name, string lastName, string ID, int rating, string vehicle) 
         : base (name, lastName, ID, rating)    

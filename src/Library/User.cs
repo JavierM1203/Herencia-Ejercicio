@@ -1,11 +1,11 @@
 namespace PII_Herencia;
 
-class User
+public abstract class User
 {
-    string name;
-    string lastName;
-    string id;
-    int rating;
+    public string name {get; private set;}
+    public string lastName {get; private set;}
+    public string id {get; private set;}
+    public int rating {get; private set;}
 
     public User(string name, string lastName, string ID, int rating)
     {

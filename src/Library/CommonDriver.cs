@@ -1,8 +1,8 @@
 namespace PII_Herencia;
 
-class CommonDriver : Driver
+public class CommonDriver : Driver
 {      
-    Passenger passenger;
+    public Passenger passenger {get; set;}
     public CommonDriver(string name, string lastName, string ID, int rating, string vehicle, Passenger passenger) 
         : base (name, lastName, ID, rating, vehicle)    
         {
@@ -18,7 +18,7 @@ class CommonDriver : Driver
             System.Console.WriteLine("There is already a passenger");
         }
     }
-
+    
     public void RemovePassenger()
     {
         this.passenger = null;
