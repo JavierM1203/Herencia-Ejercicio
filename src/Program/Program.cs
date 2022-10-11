@@ -7,7 +7,12 @@ namespace PII_Herencia
     {
         static void Main(string[] args)
         {
-           
+            var twitter = new TwitterImage();
+
+            Passenger passenger1 = new Passenger("Juan", "Artigas", "67564389", 5);            
+            Driver driver1 = new CommonDriver("Jose", "Perez", "61112220", 5, "Chevrolet", "Me llamo José", passenger1);
+
+
             
             /*
             En éste método deberas mostrar un ejemplo de funcionamiento de tu programa an pseudocódigo. A continuación te 
@@ -37,6 +42,6 @@ namespace PII_Herencia
             Se publica en Twitter nuevo registro de pasajero!
 
             */
-        }
+        } 
     }
 }

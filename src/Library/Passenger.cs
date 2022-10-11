@@ -1,5 +1,6 @@
-namespace PII_Herencia;
+using System;
 using System.Collections.Generic;
+namespace PII_Herencia;
 
 public class Passenger : User
 {
@@ -9,5 +10,7 @@ public class Passenger : User
         : base (name, lastName, ID, rating)
         {
             Admin.AddPas(this);
+            var twitter = new TwitterImage();
+            Console.WriteLine(twitter.PublishToTwitter($"Bienvenido {this.name}", @$"{this.name}.jpg"));
         }
 }

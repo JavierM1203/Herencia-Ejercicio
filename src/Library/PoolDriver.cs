@@ -7,8 +7,8 @@ public class PoolDriver : Driver
     public int capacity {get; private set;}
     List<Passenger> passengers = new List<Passenger>();
 
-    public PoolDriver(string name, string lastName, string ID, int rating, string vehicle, int capacity)
-        : base (name, lastName, ID, rating, vehicle)
+    public PoolDriver(string name, string lastName, string ID, int rating, string vehicle, string bio, int capacity)
+        : base (name, lastName, ID, rating, vehicle, bio)
         {
             this.capacity = capacity;
         }

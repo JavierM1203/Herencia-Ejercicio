@@ -3,8 +3,8 @@ namespace PII_Herencia;
 public class CommonDriver : Driver
 {      
     public Passenger passenger {get; set;}
-    public CommonDriver(string name, string lastName, string ID, int rating, string vehicle, Passenger passenger) 
-        : base (name, lastName, ID, rating, vehicle)    
+    public CommonDriver(string name, string lastName, string ID, int rating, string vehicle, string bio, Passenger passenger) 
+        : base (name, lastName, ID, rating, vehicle, bio)    
         {
             this.passenger = passenger;
         }
