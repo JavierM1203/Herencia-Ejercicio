@@ -8,6 +8,7 @@ public class Driver : User
         : base (name, lastName, ID, rating)    
         {
             this.vehicle = vehicle;
+            Admin.AddDriver(this);
         }
 
     public void AddPassenger()
